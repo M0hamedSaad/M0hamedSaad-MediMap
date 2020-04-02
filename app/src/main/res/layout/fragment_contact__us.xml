@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="20dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true">
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_below="@+id/imageView1">
+
+
+
+
+                <LinearLayout
+                    android:layout_width="410dp"
+                    android:layout_height="210dp"
+                    android:orientation="vertical"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginLeft="0dp"
+
+                    >
+
+                    <RelativeLayout
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="20dp"
+                        android:layout_below="@+id/imageView1">
+
+                        <ImageView
+                            android:id="@+id/imgView_userIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/phon"
+                            android:tint="@color/White" />
+                        <TextView
+                            android:id="@+id/textforget"
+                            android:layout_width="250dp"
+                            android:layout_height="50dp"
+
+                            android:text="We're here to help !"
+                            android:textStyle="bold"
+                            android:textColor="@color/textColor"
+
+                            android:textSize="18dp"
+                            android:layout_toRightOf="@+id/imgView_addressIcon"
+                            android:gravity="center"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="20dp"/>
+
+
+                    </RelativeLayout>
+
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="+ 011 44 3 88 323"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/phonn"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginLeft="20dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="s3adoOn.ms@gmail.com"
+                        />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/gmail"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginLeft="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="teamgp.medico@gmail.com"
+                        />
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/gmail"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginLeft="20dp"/>
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginLeft="45dp"
+                        android:text="Egypt"/>
+                    <ImageView
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:background="@drawable/locationn"
+                        android:layout_marginTop="-20dp"
+                        android:layout_marginLeft="20dp"/>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="100dp"
+                android:layout_below="@+id/relativeLayout1"
+                android:hint="Your Message "
+                android:maxLines="3"
+                android:maxLength="400"
+                android:id="@+id/contact"
+                android:layout_marginLeft="30dp"
+                android:textColorHint="@color/bluedark"
+                android:paddingLeft="20dp"
+                />
+
+            <Button
+                android:id="@+id/btnsubmitcontact"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/contact"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp"
+                android:background="@color/orange"
+                android:fontFamily="sans-serif-medium"
+                android:text="Submit"
+                android:textColor="@color/White" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="20dp"
+                android:layout_below="@+id/btnsubmitcontact"
+                />
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_margin="10dp"
+    tools:showIn="@layout/verify"
+
+    >
+
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="20dp"
+
+    >
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/docemail"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:text="Saad@email.com"
+        android:layout_marginTop="10dp"
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/clcname"
+        android:layout_height="wrap_content"
+        android:textSize="18dp"
+        android:layout_below="@+id/docemail"
+        android:text="Clinic Name"
+        android:layout_marginTop="5dp"
+
+        />
+
+
+
+
+</RelativeLayout>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="5dp"
+        android:text="show more"
+        android:layout_marginTop="65dp"
+        android:layout_alignParentEnd="true"
+        android:textStyle="bold"
+        android:textColor="@color/bluelight"
+        android:id="@+id/showmore"
+        />
+
+
+
+</RelativeLayout>
+
+
+</android.support.v7.widget.CardView>

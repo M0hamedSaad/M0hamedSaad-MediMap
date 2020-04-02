@@ -1,0 +1,487 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        android:layout_marginVertical="54dp"
+
+        >
+
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="400dp"
+                android:layout_marginTop="0dp"
+                android:id="@+id/lin"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/imageView1"
+                    >
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="40dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_userIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/img_user"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_userIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_userIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="Clinic Name"
+                            android:id="@+id/clinicname"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:inputType="text"
+                            android:maxLength="20"/>
+
+
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+
+                        android:id="@+id/relativeLayout2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout1"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_passwordIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/spec22"
+                            android:tint="@color/White" />
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spec"
+                            android:layout_alignBottom="@+id/imgView_passwordIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passwordIcon"
+                            android:background="@color/editTextBG"
+
+                            android:textColor="@color/editTextBG"
+                            android:paddingTop="10dp"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp" />
+                        <Spinner
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/spinner"
+
+                            android:layout_alignParentEnd="true"
+                            android:spinnerMode="dropdown"
+                            >
+
+
+                        </Spinner>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout3"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout2"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_repasswordIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/loc"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_repasswordIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_repasswordIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="Location"
+                            android:id="@+id/location"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:inputType="text"
+                            android:maxLength="20"/>
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout4"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout3"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_emailIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/age"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_emailIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_emailIcon"
+                            android:background="@color/editTextBG"
+                            android:id="@+id/date"
+                            android:hint="Date Of Birth"
+                            android:inputType="date"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:maxLength="10"/>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout5"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout4"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_passIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/person"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_passIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_passIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="SDD"
+                            android:id="@+id/sdd"
+                            android:inputType="number"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:maxLength="16"/>
+
+                    </RelativeLayout>
+
+
+
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout6"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout5"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_addressIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/time"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_addressIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_addressIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="Start Time"
+                            android:id="@+id/edstarttime"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:maxLength="2"/>
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="-36dp"
+                            android:layout_below="@+id/edstarttime"
+                            android:layout_alignEnd="@+id/edstarttime"
+                            android:orientation="horizontal">
+
+                            <RadioButton
+                                android:id="@+id/start_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:text="PM"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/start_am"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:text="AM" />
+                        </RadioGroup>
+
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout7"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout6"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_specIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/time"
+                            android:tint="@color/White" />
+
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_specIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_specIcon"
+                            android:background="@color/editTextBG"
+                            android:hint="Last Time"
+                            android:id="@+id/edlasttime"
+                            android:paddingLeft="20dp"
+                            android:textSize="15sp"
+                            android:inputType="number"
+                            android:maxLength="2"/>
+
+                        <RadioGroup
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="end"
+                            android:layout_marginTop="-36dp"
+                            android:layout_below="@+id/edlasttime"
+                            android:layout_alignEnd="@+id/edlasttime"
+                            android:orientation="horizontal"
+                            >
+
+                            <RadioButton
+                                android:id="@+id/end_pm"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:text="PM"
+                                android:textColorHighlight="@color/orange"
+                                android:textColorHint="@color/orange"
+                                android:shadowColor="@color/orange"
+                                />
+
+                            <RadioButton
+                                android:id="@+id/end_am"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:textColor="@color/colorblack"
+                                android:text="AM"
+                                android:textColorHighlight="@color/orange"
+                                android:textColorHint="@color/orange"
+                                android:shadowColor="@color/orange"/>
+                        </RadioGroup>
+                    </RelativeLayout>
+
+
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout8"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout7"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignParentTop="true"
+                            android:text=" Set Location "
+                            android:id="@+id/set"
+                            android:layout_marginTop="10dp"
+                            android:textColor="@color/hintcolor"
+                            android:paddingLeft="0dp"
+                            android:textSize="15sp" />
+
+                        <ImageView
+                            android:id="@+id/setlocation"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:padding="8dp"
+                            android:layout_alignParentEnd="true"
+                            android:src="@drawable/global"
+
+
+                            />
+
+                        />
+                    </RelativeLayout>
+
+
+
+
+
+                    <RelativeLayout
+                        android:id="@+id/relativeLayout9"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/relativeLayout8"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp">
+
+                        <ImageView
+                            android:id="@+id/imgView_phoneIcon"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:background="@color/orange"
+                            android:padding="8dp"
+                            android:src="@drawable/card"
+                            android:tint="@color/White" />
+
+                        <Button
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_alignBottom="@+id/imgView_phoneIcon"
+                            android:layout_alignParentTop="true"
+                            android:layout_toRightOf="@+id/imgView_phoneIcon"
+                            android:background="@color/editTextBG"
+                            android:text=" Choose Img Card"
+                            android:id="@+id/card"
+                            android:textColor="@color/bluelight"
+                            android:paddingLeft="0dp"
+                            android:textSize="15sp" />
+
+                    </RelativeLayout>
+
+
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:adjustViewBounds="true"
+                        android:maxWidth="300dp"
+                        android:maxHeight="200dp"
+                        android:scaleType="fitCenter"
+                        android:layout_marginTop="15dp"
+                       android:layout_centerHorizontal="true"
+    android:id="@+id/imgview"
+    android:layout_below="@id/relativeLayout9"
+
+    />
+
+
+
+
+
+
+
+
+                    <Button
+                        android:id="@+id/send"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imgview"
+                        android:layout_marginLeft="30dp"
+                        android:layout_marginRight="30dp"
+                        android:layout_marginTop="15dp"
+                        android:background="@color/orange"
+                        android:fontFamily="sans-serif-medium"
+                        android:text="Submit"
+                        android:textColor="@color/White"
+                        android:layout_marginVertical="@dimen/cardview_compat_inset_shadow"
+                        />
+
+
+                </RelativeLayout>
+            </ScrollView>
+
+        </RelativeLayout>
+
+
+    </android.support.v7.widget.CardView>
+
+</RelativeLayout>

@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v4.widget.DrawerLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drower"
+    android:background="@color/white"
+
+    >
+
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+
+        android:id="@+id/frag"
+        >
+
+            <android.support.v7.widget.Toolbar
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/toolbar"
+                android:background="@color/orange"
+                android:minHeight="?attr/actionBarSize"
+                app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+                app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
+                android:gravity="center"/>
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="500dp"
+            android:layout_marginTop="60dp"
+            android:orientation="vertical"
+            android:id="@+id/Lineartest"
+            >
+
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1.5dp"
+            android:background="@color/hintcolor"
+            android:layout_marginTop="650dp" />
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+
+                >
+
+            <android.support.design.widget.CoordinatorLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+
+                <android.support.design.widget.BottomNavigationView
+                        android:layout_width="match_parent"
+                        android:layout_height="51dp"
+                        android:id="@+id/nav"
+                        android:layout_gravity="bottom|end"
+                        app:menu="@menu/menutap"
+                        app:itemTextColor="@color/colorblack"
+                        app:itemIconTint="@color/orange"
+                        >
+                </android.support.design.widget.BottomNavigationView>
+
+                </android.support.design.widget.CoordinatorLayout>
+
+
+            </RelativeLayout>
+        </FrameLayout>
+
+        <android.support.design.widget.NavigationView
+            app:headerLayout="@layout/user_header"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:background="@color/white"
+            app:itemTextColor="@color/colorblack"
+            app:itemIconTint="@color/orange"
+            app:menu="@menu/menu"
+            android:id="@+id/nv"
+            android:layout_gravity="start"
+            >
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1.5dp"
+                android:background="@color/hintcolor"
+                android:layout_marginTop="550dp"
+                />
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="Language  :  English"
+    android:textColor="@color/hintcolor"
+    android:layout_marginLeft="25dp"
+    android:layout_marginTop="570dp"
+    android:textStyle="bold"
+    />
+
+        </android.support.design.widget.NavigationView>
+
+    </android.support.v4.widget.DrawerLayout>
